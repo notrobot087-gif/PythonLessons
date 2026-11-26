@@ -1,4 +1,8 @@
+f_count=0
+
 def fib(n):
+    global f_count
+    f_count+=1
     if n==1 or n==2:
         return 1
 
@@ -7,3 +11,4 @@ def fib(n):
     return a+b
 a=int(input())
 print(fib(a))
+print(f_count)
